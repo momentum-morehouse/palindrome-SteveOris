@@ -2,10 +2,11 @@
 
 def isPalindrome():
   x = input('enter phrase')
-  return x == x[::-1] 
+  return x == x[::-1]
+   
 ans = isPalindrome()
   
 if ans:
-    print("Yes") 
+    print("is a palindrome") 
 else: 
-    print("No") 
+    print("is not a palindrome")
