@@ -1,12 +1,13 @@
+import re
 
-
-def isPalindrome():
-  x = input('enter phrase')
-  return x == x[::-1]
+def is_Palindrome():
+  x = input('enter phrase ')
+  clean = re.sub(r'[^A-Za-z]','', x.lower())
+  return clean == clean[::-1], x
    
-ans = isPalindrome()
+ans = is_Palindrome()
   
 if ans:
-    print("is a palindrome") 
+    print( ans[1], 'is a palindrome')
 else: 
     print("is not a palindrome")
